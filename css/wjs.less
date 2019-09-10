@@ -1,0 +1,256 @@
+@baseColor:#e92322;
+.wjs_header{
+  height: 50px;
+  line-height: 50px;
+border-bottom: 1px solid #ccc;
+  .row{
+    text-align: center;
+    height: 100%;
+    >div:nth-of-type(-n+3){
+      border-right: 1px solid #ccc;
+    > .wjs_code{
+      position: relative;
+      display: block;
+      >img{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top:50px;
+        left:50%;
+        transform: translateX(-50%);
+      }
+      &:hover{
+      >img{  display: block;}
+      }
+    }
+    }
+  }
+}
+.wjs_nav{
+  &.navbar{
+    margin-bottom: 0;
+  }
+  //height: 80px;后续要撑开
+  .navbar-brand{
+   height: 80px;
+    line-height: 50px;
+  }
+}
+.navbar-default .navbar-nav{
+  >li{
+    >a{
+      line-height: 50px;
+      font-size: 16px;
+    }
+    >a:hover,a:focus{
+      color: #777;
+      background-color:transparent;
+      border-bottom: 3px solid @baseColor;
+    }
+  }
+  .active{
+    >a,a:hover,a:focus{
+      background-color:transparent;
+      border-bottom: 3px solid @baseColor;
+    }
+  }
+}
+
+.wjs_icon_logo{
+  color: @baseColor;
+  font-size: 40px;
+}
+.wjs_icon_text{
+  font-size: 40px;
+  color: black;
+}
+.mobileImg{
+  width: 100%;
+  display: block;
+  >img{
+    width: 100%;
+    display: block;
+  }
+}
+.pcImg{
+  display: block;
+  height: 410px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/////////////
+.wjs_info{
+  padding: 30px;
+  .wjs_icon{
+    font-size: 30px;
+  }
+  .row{
+    >div{
+      margin-top: 20px;
+      >a:hover{
+        color: @baseColor;
+      }
+    }
+  }
+}
+
+
+.wjs_reverse{
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  span{
+    color: @baseColor;
+  }
+}
+.wjs_product{
+  background-color: #eee;
+  padding: 20px;
+  .scroll{
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav-tabs{
+    li{
+      margin-bottom: 0;
+      padding: 0px 15px;
+      >a{
+        line-height: 50px;
+        border: none;
+        background-color: transparent;
+      }
+      >a:hover{
+        border-bottom: 3px solid @baseColor;
+      }
+      &.active{
+        >a,a:hover,a:focus{
+border: none;
+          border-bottom: 3px solid @baseColor;
+          background-color: #eee;
+        }
+      }
+
+    }
+  }
+  .wjs_pBox{
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+    background-color: white;
+
+    .wjs_pLeft{
+margin-right: 100px;
+      height: 150px;
+>p{
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+      .row{
+        >div:nth-of-type(even){
+          text-align: right;
+        }
+        >div:nth-of-type(odd){
+          padding-left: 40px;
+        }
+      }
+    }
+    .wjs_pRight{
+position: absolute;
+     top: 0;
+      right: 0;
+      width: 100px;
+      height: 150px;
+      border-left:1px dashed #ccc;
+      text-align: center;
+      padding-top: 30px;
+
+      >b{
+        font-size: 40px;
+        color: @baseColor;
+      }
+      >sub{
+        color: @baseColor;
+      }
+      &::before,&::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #eee;
+        position: absolute;
+
+        left: -5px;
+      }
+      &::before{
+        top:-5px;
+        box-shadow: 0px -1px 1px #ddd inset;
+      }
+      &::after{
+        bottom: -5px;
+        box-shadow: 0px 1px 1px #ddd inset;
+      }
+    }
+    &.active{
+      background-color: @baseColor;
+      >.wjs_pRight{
+        color: white;
+      }
+      >.wjs_pLeft{
+        color: white;
+      }
+    }
+  }
+}
+.wjs_news{
+  padding: 20px;
+  ul{
+    border: none;
+  }
+  .wjs_tital{
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-tabs{
+    >li{
+      margin: 10px 0px;
+      >a{
+        background-color: #ccc;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+      }
+      >a:hover{
+        background-color: @baseColor;
+      }
+      &.active{
+        >a,a:hover,a:focus{
+          background-color: @baseColor;
+        }
+      }
+    }
+    .wjs_icon{
+      font-size: 30px;
+      color: #fff;
+    }
+    @media screen and (min-width:768px) and (max-width: 992px){
+      >li{
+        margin: 20px 30px;
+      }
+
+    }
+    @media screen and (max-width: 768px){
+      >li{
+        margin: 20px 0px;
+        width: 25%;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,62 @@
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+/*左边距*/
+.m_l10{
+    margin-left: 10px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+@font-face {
+    font-family: 'wjs';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+      url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff');
+}
+@font-face {
+    font-family: 'glyphicon';
+    src: url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+    url('../fonts/glyphicons-halflings-regular.svg') format('svg'),
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff');
+
+}
+.wjs_icon{
+    font-family: wjs;
+}
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+    font-size: 14px;
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+
+}
+.wjs_icon_text::before{
+    content: "\e93e";
+}
+.wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_icon_new03::before{
+    content: "\e910";
+}
